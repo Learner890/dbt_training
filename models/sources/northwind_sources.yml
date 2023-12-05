@@ -7,6 +7,9 @@ sources:
         columns:
           - name: id
             data_type: varchar
+            tests:
+              - unique
+              - not_null
           - name: orderid
             data_type: number
           - name: productid
@@ -22,6 +25,9 @@ sources:
         columns:
           - name: id
             data_type: varchar
+            tests:
+              - unique
+              - not_null
           - name: companyname
             data_type: varchar
           - name: contactname
